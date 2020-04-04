@@ -420,6 +420,8 @@ function parseContractKind(kind: string): ClassStereotype {
             return ClassStereotype.Interface
         case 'library':
             return ClassStereotype.Library
+        case 'abstract':
+            return ClassStereotype.Abstract
         default:
             throw Error(`Invalid kind ${kind}`)
     }
