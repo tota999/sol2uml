@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { ASTNode, parse } from 'solidity-parser-antlr'
+import { ASTNode, parse } from '@solidity-parser/parser'
 import { VError} from 'verror'
 
 import { convertNodeToUmlClass } from './parser'
@@ -49,7 +49,7 @@ export class EtherscanParser {
     /**
      * Parses Solidity source code into an ASTNode object
      * @param sourceCode Solidity source code
-     * @return Promise with an ASTNode object from solidity-parser-antlr
+     * @return Promise with an ASTNode object from @solidity-parser/parser
      */
     async parseSourceCode(sourceCode: string): Promise<ASTNode> {
         try {

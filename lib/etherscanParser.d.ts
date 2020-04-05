@@ -1,4 +1,4 @@
-import { ASTNode } from 'solidity-parser-antlr';
+import { ASTNode } from '@solidity-parser/parser';
 import { UmlClass } from './umlClass';
 declare const networks: readonly ["mainnet", "ropsten", "kovan", "rinkeby", "goerli"];
 declare type Network = typeof networks[number];
@@ -16,7 +16,7 @@ export declare class EtherscanParser {
     /**
      * Parses Solidity source code into an ASTNode object
      * @param sourceCode Solidity source code
-     * @return Promise with an ASTNode object from solidity-parser-antlr
+     * @return Promise with an ASTNode object from @solidity-parser/parser
      */
     parseSourceCode(sourceCode: string): Promise<ASTNode>;
     /**

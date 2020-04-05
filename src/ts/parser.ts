@@ -4,7 +4,7 @@ import {
     Expression,
     TypeName,
     VariableDeclaration
-} from 'solidity-parser-antlr'
+} from '@solidity-parser/parser'
 import {ClassStereotype, OperatorStereotype, Parameter, ReferenceType, UmlClass, Visibility} from './umlClass'
 
 const debug = require('debug')('sol2uml')

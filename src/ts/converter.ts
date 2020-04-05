@@ -1,3 +1,4 @@
+import {dotUmlClass} from "./dotGenerator"
 
 const debug = require('debug')('sol2uml')
 
@@ -89,7 +90,7 @@ label="${umlClass.codeSource}"`
 
             sourceFolder = umlClass.codeSource
         }
-        dotString += umlClass.dotUmlClass()
+        dotString += dotUmlClass(umlClass)
     }
 
     // Need to close off the last subgraph if not the first

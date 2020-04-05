@@ -77,14 +77,4 @@ export declare class UmlClass implements ClassProperties {
     };
     constructor(properties: ClassProperties);
     addAssociation(association: Association): void;
-    dotUmlClass(): string;
-    dotClassTitle(): string;
-    dotAttributeVisibilities(): string;
-    static dotAttributes(vizGroup: string, attributes: Attribute[]): string;
-    dotOperatoreVisibilities(): string;
-    dotOperators(vizGroup: string, operators: Operator[]): string;
-    dotOperatorStereotype(operatorStereotype: OperatorStereotype): string;
-    static dotParameters(parameters: Parameter[], returnParams?: boolean): string;
-    dotStructs(): string;
-    dotEnums(): string;
 }
