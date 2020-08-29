@@ -162,6 +162,10 @@ To run the Jest tests
 
 `npm run test`
 
+To access your local changes on your machine globally.
+
+`npm link`
+
 # About
 
 This is a rewrite of the Richard Ramos's [solidity-diagram-gen](https://github.com/richard-ramos/solidity-diagram-gen) tool which no longer works as it uses [solidity-parser](https://www.npmjs.com/package/solidity-parser/v/0.4.0) which cannot handle newer Solidity syntax like `constructor`.
