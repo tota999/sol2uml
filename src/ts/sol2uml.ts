@@ -60,7 +60,11 @@ async function sol2uml() {
       process.exit(1)
     }
 
-    umlClasses = await parseUmlClassesFromFiles([fileFolderAddress], depthLimit)
+    if (Array.isArray(fileFolderAddress)) {
+      umlClasses = await parseUmlClassesFromFiles(fileFolderAddress, depthLimit)
+    } else {
+      umlClasses = await parseUmlClassesFromFiles([fileFolderAddress], depthLimit)
+    }
   }
 
   let filteredUmlClasses = umlClasses

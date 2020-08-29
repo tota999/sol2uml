@@ -25,7 +25,7 @@ npm upgrade sol2uml -g
 
 To see which version you are using
 ```bash
-npm ls sol2uml
+npm ls sol2uml -g
 ```
 
 # Usage
@@ -135,16 +135,32 @@ A Solidity variable becomes an attribute in UML and a Solidity function becomes 
 ## UML Associations
 
 Lines:
-- Solid lines are used to link the contract types of storage (state) variables. This can be linked to contracts, interfaces or libraries.
-- Solid lines are also used for generalisations of contracts and abstract contracts.
-- Solid lines are also used for aggregated structs and enums
-- Dashed lines are used or generalisations of interfaces.
-- Dash lines are also used for types of memory variables.
+- Solid lines for
+    - link the contract types of storage (state) variables. This can be linked to contracts, interfaces or libraries.
+    - generalisations of contracts and abstract contracts.
+    - aggregated structs and enums
+- Dashed lines for
+    - generalisations of interfaces.
+    - types of memory variables.
 
 Heads/Tails:
-- An empty triangle head is used for generalisations of contracts, interfaces and abstract contracts.
-- An open arrow head is used for storage or memory variable dependencies
-- A diamond tail is used for aggregations of structs and enums
+- An empty triangle head for generalisations of contracts, interfaces and abstract contracts.
+- An open arrow head for storage or memory variable dependencies
+- A diamond tail for aggregations of structs and enums
+
+# Contribution
+
+To build the test contracts in this repository
+
+`npm run buildSol`
+
+To build the TypeScript files
+
+`npm run build`
+
+To run the Jest tests
+
+`npm run test`
 
 # About
 
