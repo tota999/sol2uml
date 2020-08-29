@@ -4,7 +4,7 @@
 
 [Unified Modeling Language (UML)](https://en.wikipedia.org/wiki/Unified_Modeling_Language) [class diagram](https://en.wikipedia.org/wiki/Class_diagram) generator for [Solidity](https://solidity.readthedocs.io/) contracts.
 
-Open Zeppelin's ERC20 token contracts generated from [version 2.3.0](https://github.com/OpenZeppelin/openzeppelin-solidity/tree/v2.3.0/contracts/token/ERC20)
+Open Zeppelin's ERC20 token contracts generated from [version 2.5.1](https://github.com/OpenZeppelin/openzeppelin-solidity/tree/v2.5.1/contracts/token/ERC20)
 ![Open Zeppelin ERC20](./examples/OpenZeppelinERC20.svg)
 
 See [examples](./examples/README.md) for more diagrams.
