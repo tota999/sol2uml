@@ -19,7 +19,7 @@
   "dependencies": {
     "axios": "^0.20.0",
     "commander": "^3.0.2",
-    "debug": "^4.1.1",
+    "debug": "^4.3.0",
     "js-graph-algorithms": "^1.0.18",
     "klaw": "^2.1.1",
     "@solidity-parser/parser": "^0.7.0",
